@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def index
     user = User.order(:id).map { |user| user.to_display_user }.join("\n")
-    render plain: "User List: - \n \n #{user}"
+    render plain: "\n User List: - \n \n #{user}"
   end
 
   def create
