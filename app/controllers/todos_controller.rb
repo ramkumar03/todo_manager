@@ -10,7 +10,7 @@ class TodosController < ApplicationController
   def show
     id = params[:id]
     todo = Todo.find(id).to_pleasant_string
-    render plain: todo
+    render plain: "Todo Task id. #{id}\n\n #{todo}"
   end
 
   def create
