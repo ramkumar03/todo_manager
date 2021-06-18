@@ -15,4 +15,12 @@ class UsersController < ApplicationController
     response_text = "hey #{new_user.name}, \n Your User id created with id #{new_user.id}"
     render plain: response_text
   end
+
+  def login
+    email = params[:email]
+    password = params[:password]
+    user = User.where("email = ? and password = ?", email, password).first
+    response_text = user ? "true" : "false"
+    render plain: response_text
+  end
 end
