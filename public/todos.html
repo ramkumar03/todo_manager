@@ -4,42 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="reset.css" rel="stylesheet" />
-
-
+    <link href="todo-app.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/ios/50/000000/add-to-collection--v2.png"
+    />
     <title>Todo-List Manager</title>
   </head>
 
   <body>
-    <main>
+    <main class="TodoPageMain">
       <article>
-        <h1>My To-do List</h1>
-        <section>
-          <input type="text" placeholder="what's next?" />
-          <input type="date" />
-          <input type="button" value="Add" />
+        <h1 class="TodoPage-title">My To-do List</h1>
+        <section class="AddTodo">
+          <input class="AddTodo-text" type="text" placeholder="what's next?" />
+          <input class="AddTodo-date" type="date" />
+          <input class="AddTodo-button" type="button" value="Add" />
         </section>
-        <section>
-          <div>
-            <p>Due Today</p>
-            <p>0/4</p>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due Today</p>
+            <p class="TodoSectionTitle-remaining">0/4</p>
           </div>
           <ul>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Submit SaaS 201 project
-                <p>Overdue</p>
+                <p class="TodoItem-overdueLabel">Overdue</p>
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
               </label>
             </li>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Call accountant
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
@@ -47,17 +52,18 @@
             </li>
           </ul>
         </section>
-        <section>
-          <div>
-            <p>Due Tomorrow</p>
-            <p>0/3</p>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due Tomorrow</p>
+            <p class="TodoSectionTitle-remaining">0/3</p>
           </div>
           <ul>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Refill groceries
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
@@ -65,40 +71,43 @@
             </li>
           </ul>
         </section>
-        <section>
-          <div>
-            <p>Remaining</p>
-            <p>0/3</p>
+        <section class="TodoSection">
+          <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Remaining</p>
+            <p class="TodoSectionTitle-remaining">0/3</p>
           </div>
           <ul>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Type Something
-                <p>jan 21</p>
+                <p class="TodoItem-date">jan 21</p>
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
               </label>
             </li>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Type Something
-                <p>jan 22</p>
+                <p class="TodoItem-date">jan 22</p>
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
               </label>
             </li>
-            <li>
-              <label>
-                <input type="checkbox" />
+            <li class="TodoItem">
+              <label class="TodoItem-container">
+                <input class="TodoItem-checkbox" type="checkbox" />
                 Type Something
-                <p>jan 23</p>
+                <p class="TodoItem-date">jan 23</p>
                 <img
+                  class="TodoItem-image"
                   src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
                   alt="delete"
                 />
