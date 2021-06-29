@@ -4,7 +4,8 @@ class TodosController < ApplicationController
 
   def index
     #todo = Todo.order(:due_date).map { |todo| todo.to_pleasant_string }.join("\n")
-    render plain: Todo.show_list
+    #render plain: Todo.show_list
+    render "index"
   end
 
   def show

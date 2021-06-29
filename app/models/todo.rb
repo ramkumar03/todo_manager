@@ -23,6 +23,9 @@ class Todo < ActiveRecord::Base
     all.order(:due_date).map { |todo| todo.to_pleasant_string }.join("\n")
   end
 
+  def self.completed
+    all.where(completed: true)
+  end
   # Display full todo list
   def self.show_list
     "\n Todo-list:-
