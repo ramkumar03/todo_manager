@@ -5,7 +5,7 @@ class Todo < ActiveRecord::Base
 
   #filters overdue todos
   def self.overdue
-    where("due_date < ?", Date.today)
+    where("due_date < ? and completed = ? ", Date.today, false)
   end
 
   #filters today's todos
