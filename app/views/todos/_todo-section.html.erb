@@ -33,12 +33,14 @@
                         <p class="TodoItem-date"> <%= todo.due_date.to_s(:short) %> </p>
                       <% end %>
 
+                      <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
 
-                      <img
-                        class="TodoItem-image"
-                        src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
-                        alt="delete"
-                      />
+                        <input
+                          type="image"
+                          class="TodoItem-image"
+                          src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
+                        />
+                        <% end %>
                     </label>
                   </li>
 
