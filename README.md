@@ -21,5 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ... Visit my deployed todo-manager in heroku @ https://ramkumar-todo-manager-wd-201.herokuapp.com/todos
+* ... Visit my deployed todo-manager in heroku @ https://ramkumar-todo-manager-saas-201.herokuapp.com/todos
 * 
