@@ -13,6 +13,7 @@ input {
 .TodoPageMain {
   background-color: hsl(0, 0%, 97%);
   border-radius: 40px;
+  width: 100%;
   padding: 10%;
   box-shadow: 1px 10px 20px #aaaaaa;
 }
@@ -46,10 +47,8 @@ input {
 }
 
 .AddTodo-date {
-  padding: 6px;
   font-size: 14px;
-  width: 70px;
-  padding-left: 30px;
+  width: 30%;
   margin-right: 10px;
   border-radius: 4px;
   border: 1px solid #bfb8cc;
