@@ -14,33 +14,32 @@
                       <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
 
 
-                        <input
-                              class="TodoItem-checkbox"
-                              name="completed"
-                              type="checkbox"
-                              <%= todo.completed ? "checked" : "" %>
-                              onclick="this.form.submit()"
-                        />
+                          <%= check_box_tag("completed", nil, todo.completed,
+                                            class: "TodoItem-checkbox",
+                                            onclick: "this.form.submit()") %>
+
 
                       <% end %>
 
 
 
-                      <p class = <%= todo.completed ? "TodoItem-completed" : "" %> > <%= todo.todo_text %> </p>
+                      <p class = <%= todo.completed ? "TodoItem-completed" : "" %> >
+                        <%= todo.todo_text %>
+                      </p>
 
 
                       <% if show_due_date %>
-                        <p class="TodoItem-date"> <%= todo.due_date.to_s(:short) %> </p>
+                        <p class="TodoItem-date">
+                          <%= todo.due_date.to_s(:short) %>
+                        </p>
                       <% end %>
 
                       <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
 
-                        <input
-                          type="image"
-                          class="TodoItem-image"
-                          src="https://img.icons8.com/ios/50/000000/full-trash--v2.png"
-                        />
-                        <% end %>
+                        <%= image_submit_tag("https://img.icons8.com/ios/50/000000/full-trash--v2.png",
+                                             class: "TodoItem-image") %>
+
+                      <% end %>
                     </label>
                   </li>
 
