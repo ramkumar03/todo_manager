@@ -10,14 +10,23 @@
 
                   <li class="TodoItem">
                     <label class="TodoItem-container">
-                      <input class="TodoItem-checkbox"
-                             type="checkbox"
-                             <%= todo.completed ? "checked" : "" %>
-                      />
+
+                      <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
+
+
+                        <input
+                              class="TodoItem-checkbox"
+                              name="completed"
+                              type="checkbox"
+                              <%= todo.completed ? "checked" : "" %>
+                              onclick="this.form.submit()"
+                        />
+
+                      <% end %>
 
 
 
-                        <p class = <%= todo.completed ? "TodoItem-completed" : "" %> > <%= todo.todo_text %> </p>
+                      <p class = <%= todo.completed ? "TodoItem-completed" : "" %> > <%= todo.todo_text %> </p>
 
 
                       <% if show_due_date %>
