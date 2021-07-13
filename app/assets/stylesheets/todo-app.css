@@ -173,3 +173,22 @@ ul {
   transition: color 0.5s;
   color: dodgerblue;
 }
+.UsersForm-head {
+  margin: 50px px;
+  display: inline-block;
+}
+.UsersForm-home {
+  font-size: 14px;
+  color: white;
+  background-color: #48bb78;
+  margin-left: 70%;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  float: right;
+}
+.UsersForm-home:hover {
+  transition: background-color 0.5s;
+  background-color: dodgerblue;
+}

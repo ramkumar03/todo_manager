@@ -1,9 +1,10 @@
 <main class = "TodoPageMain">
-
-  <p class="TodoPage-title" > Create an Account</p>
+ <%= link_to "Home", "/",
+             class: "UsersForm-home" %>
+  <p class="TodoPage-title UsersForm-head" > Todo Manager</p>
 
   <div class= "UsersForm-section">
-   <p class="TodoSectionTitle-text">Fill in the details</p>
+   <p class="TodoSectionTitle-text">Create an Account</p>
   </div>
   <section class="UsersForm">
     <%= form_with(url: "/users", method: "post") do |form| %>
