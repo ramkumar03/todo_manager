@@ -1,0 +1,26 @@
+<main class = "TodoPageMain">
+
+  <p class="TodoPage-title" > Todo Manager</p>
+
+  <div class= "UsersForm-section">
+   <p class="TodoSectionTitle-text">Sign In</p>
+  </div>
+  <section class="UsersForm">
+    <%= form_with(url: sessions_path, method: "post") do |form| %>
+
+      <div class= "UsersForm-section">
+        <p> Email : </p>
+        <%= form.email_field :email, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <p> Password : </p>
+        <%= form.password_field :password, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <%= submit_tag "Sign In",
+                       class: "AddTodo-button" %>
+      </div>
+
+    <% end %>
+  </section>
+</main>

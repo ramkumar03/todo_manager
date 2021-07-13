@@ -160,3 +160,16 @@ ul {
   border-radius: 4px;
   border: 1px solid #bfb8cc;
 }
+
+.HomeSection-link {
+  margin: 50px px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #ff5f7a;
+  text-decoration: none;
+}
+
+.HomeSection-link:hover {
+  transition: color 0.5s;
+  color: dodgerblue;
+}

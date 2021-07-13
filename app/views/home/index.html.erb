@@ -1,4 +1,15 @@
 <main class = "TodoPageMain" style="text-align: center;">
+
   <p class="TodoPage-title" > Welcome to the Todo Manager</p>
-  <p class="TodoSectionTitle-text">If you are a New User, Sign up here</p>
+
+  <p class="UsersForm-section">If you are a New User,
+    <%= link_to "Sign-up here",
+                new_user_path,
+                class: "HomeSection-link" %>
+  </p>
+  <p class="UsersForm-section">If you are an existing User,
+    <%= link_to "Sign-in here",
+                new_sessions_path,
+                class: "HomeSection-link" %>
+  </p>
 </main>
