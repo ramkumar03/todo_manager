@@ -143,3 +143,20 @@ ul {
   transition: background-color 0.5s;
   background-color: dodgerblue;
 }
+
+.UsersForm {
+  margin: 30px;
+}
+.UsersForm-section {
+  margin: 25px;
+  font-size: 14px;
+  color: #453c52;
+}
+.UsersForm-input {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #726a7e;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #bfb8cc;
+}

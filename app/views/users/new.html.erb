@@ -1,0 +1,34 @@
+<main class = "TodoPageMain">
+
+  <p class="TodoPage-title" > Create an Account</p>
+
+  <div class= "UsersForm-section">
+   <p class="TodoSectionTitle-text">Fill in the details</p>
+  </div>
+  <section class="UsersForm">
+    <%= form_with(url: "/users", method: "post") do |form| %>
+
+      <div class= "UsersForm-section">
+        <p> First Name : </p>
+        <%= form.text_field :first_name, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <p> Last Name : </p>
+        <%= form.text_field :last_name, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <p> Email : </p>
+        <%= form.email_field :email, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <p> Password : </p>
+        <%= form.password_field :password, class: "UsersForm-input" %>
+      </div>
+      <div class= "UsersForm-section">
+        <%= submit_tag "Sign Up",
+                       class: "AddTodo-button" %>
+      </div>
+
+    <% end %>
+  </section>
+</main>

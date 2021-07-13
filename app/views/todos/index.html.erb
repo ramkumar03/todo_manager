@@ -9,8 +9,8 @@
           <%= date_field_tag "due_date", nil,
                              required: true,
                              class: "AddTodo-date" %>
-          <%= submit_tag nil,
-                         class: "AddTodo-button" %>
+          <%= submit_tag nil, value: "Add",
+                              class: "AddTodo-button" %>
        <% end %>
 
         <%= render partial: "todo-section", locals: {
