@@ -11,19 +11,26 @@
 
       <div class= "UsersForm-section">
         <p> First Name : </p>
-        <%= form.text_field :first_name, class: "UsersForm-input" %>
+        <%= form.text_field :first_name,
+                            required: true,
+                            class: "UsersForm-input" %>
       </div>
       <div class= "UsersForm-section">
         <p> Last Name : </p>
-        <%= form.text_field :last_name, class: "UsersForm-input" %>
+        <%= form.text_field :last_name,
+                            class: "UsersForm-input" %>
       </div>
       <div class= "UsersForm-section">
         <p> Email : </p>
-        <%= form.email_field :email, class: "UsersForm-input" %>
+        <%= form.email_field :email,
+                             required: true,
+                             class: "UsersForm-input" %>
       </div>
       <div class= "UsersForm-section">
         <p> Password : </p>
-        <%= form.password_field :password, class: "UsersForm-input" %>
+        <%= form.password_field :password,
+                                required: true,
+                                class: "UsersForm-input" %>
       </div>
       <div class= "UsersForm-section">
         <%= submit_tag "Sign Up",

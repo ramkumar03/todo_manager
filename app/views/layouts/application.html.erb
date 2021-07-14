@@ -11,6 +11,11 @@
   </head>
 
   <body style="background-color:beige;">
+    <% if flash[:error] %>
+      <div class="FlashMessage">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
