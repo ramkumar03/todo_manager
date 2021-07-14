@@ -1,5 +1,9 @@
    <main class="TodoPageMain">
       <article>
+        <%= link_to "Sign-Out",
+                    destroy_session_path,
+                    method: "delete",
+                    class: "UsersForm-home" %>
 
         <h1 class="TodoPage-title">
 

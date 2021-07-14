@@ -1,5 +1,7 @@
 # users_controller.rb
 class UsersController < ApplicationController
+  skip_before_action :ensure_user_logged_in
+
   def index
     user = User.order(:id).map { |user| user.to_display_user }.join("\n")
     render plain: "\n User List: - \n \n #{user}"
